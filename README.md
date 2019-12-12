@@ -7,9 +7,7 @@ This code highlighter is developed with [Stencil](https://stenciljs.com) and use
 Furthermore, the inspiration for the design of the cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code.
 
 <div align="center">
-  <br>
   <img src="static/screenshot.png" alt="Syntax highlighting code block as card" width="100%">
-  <br>
 </div>
 
 ## Table of contents
