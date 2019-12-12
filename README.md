@@ -14,6 +14,7 @@ Furthermore, the inspiration for the design of the cards comes from the amazing 
     - [Load the component](#load-the-component)
 - [Language](#language)
 - [Styling](#styling)
+- [Showcase](#showcase)
 - [License](#license)
 
 ## Install
@@ -71,6 +72,10 @@ This plugin supports all languages supported by [Prism.js](https://prismjs.com).
 ## Styling
 
 See the [@deckdeckgo/highlight-code] documentation for the list of CSS4 styling variables.
+
+## Showcase
+
+I (David here) use this plugin in the blog of my personal website [daviddalbusco.com](https://daviddalbusco.com).
 
 ## License
 
