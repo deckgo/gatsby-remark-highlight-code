@@ -2,7 +2,7 @@
 
 Adds stylish cards and syntax highlighting to code blocks in markdown files using the [@deckdeckgo/highlight-code] Web Component.
 
-This code highlighter is developed with [Stencil] and use [Prism.js] under the hood.
+This code highlighter is developed with [Stencil](https://stenciljs.com) and use [Prism.js](https://prismjs.com) under the hood.
 
 Furthermore, the inspiration for the design of the cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code.
 
@@ -46,7 +46,7 @@ plugins: [
 
 ### Load the component
 
-[Stencil] components should currently be loaded at runtime (see issue [#1724](https://github.com/ionic-team/stencil/issues/1724)).
+[Stencil](https://stenciljs.com) components should currently be loaded at runtime (see issue [#1724](https://github.com/ionic-team/stencil/issues/1724)).
 
 For that purpose, load the [@deckdeckgo/highlight-code] once in one of your pages or components are mounted.
 
@@ -66,7 +66,7 @@ async componentDidMount() {
 
 ## Language
 
-This plugin supports all languages supported by [Prism.js]. Nothing particular needs to be specified because the component [@deckdeckgo/highlight-code] will load them automatically at runtime.
+This plugin supports all languages supported by [Prism.js](https://prismjs.com). Nothing particular needs to be specified because the component [@deckdeckgo/highlight-code] will load them automatically at runtime.
 
 ## Styling
 
@@ -77,5 +77,3 @@ See the [@deckdeckgo/highlight-code] documentation for the list of CSS4 styling 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com) and [Nicolas Mattia](mailto:nicolas@nmattia.com) 
 
 [@deckdeckgo/highlight-code]: https://docs.deckdeckgo.com/components/code
-[PrismJS]: https://prismjs.com
-[Stencil]: (https://stenciljs.com)
