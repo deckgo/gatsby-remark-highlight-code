@@ -33,6 +33,8 @@
     "prismjs",
     "code",
     "highlight code",
-    "code highlighter"
+    "code highlighter",
+    "highlight",
+    "markdown"
   ]
 }
