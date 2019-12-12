@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "gatsby-node-helpers": "^0.3.0",
+    "lodash": "^4.17.15",
+    "mdast-util-to-string": "^1.0.7",
     "unist-util-visit": "^2.0.1"
   },
   "peerDependencies": {
