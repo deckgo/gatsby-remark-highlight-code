@@ -18,6 +18,8 @@ Furthermore, the inspiration for the design of the cards comes from the amazing 
     - [Load the component](#load-the-component)
 - [Language](#language)
 - [Styling](#styling)
+    - [Terminal](#terminal)
+    - [Variables](#variables)
 - [Showcase](#showcase)
 - [License](#license)
 
@@ -74,6 +76,37 @@ async componentDidMount() {
 This plugin supports all languages supported by [Prism.js](https://prismjs.com). Nothing particular needs to be specified because the component [@deckdeckgo/highlight-code] will load them automatically at runtime.
 
 ## Styling
+
+Code blocks are displayed in stylish cards but the behavior could be customized.
+
+### Terminal
+
+Per default, code blocks are going to be displayed in `carbon` ("Macish like") container.
+
+It is also possible to use `ubuntu` (an Ubuntu-like container) or `none` (no window container).
+
+Such settings can be provided in the configuration of the plugin.
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-highlight-code`,
+          options: {
+            terminal: 'ubuntu'
+          }
+        },
+      ],
+    },
+  },
+]
+```
+
+### Variables
 
 See the [@deckdeckgo/highlight-code] documentation for the list of CSS4 styling variables.
 
