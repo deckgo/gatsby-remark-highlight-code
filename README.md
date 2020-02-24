@@ -4,10 +4,24 @@ Adds stylish cards and syntax highlighting to code blocks in markdown files usin
 
 This code highlighter is developed with [Stencil](https://stenciljs.com) and use [Prism.js](https://prismjs.com) under the hood.
 
-Furthermore, the inspiration for the design of the cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code.
+The inspiration for the design of the "Macish" cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code, and for the "Ubuntu-ish" from the [article](https://dev.to/codypearce/ubuntu-terminal-in-css-1aeo) of [Cody Pearce](https://twitter.com/codyapearce).
 
-<div align="center">
-  <img src="static/screenshot.png" alt="Syntax highlighting code block as card" width="100%">
+Carbon:
+
+<div align="left">
+  <img src="static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="100%">
+</div>
+
+Ubuntu:
+
+<div align="left">
+  <img src="static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="100%">
+</div>
+
+None:
+
+<div align="left">
+  <img src="static/screenshot-none.png" alt="Syntax highlighting code block" width="100%">
 </div>
 
 ## Table of contents
@@ -18,6 +32,8 @@ Furthermore, the inspiration for the design of the cards comes from the amazing 
     - [Load the component](#load-the-component)
 - [Language](#language)
 - [Styling](#styling)
+    - [Terminal](#terminal)
+    - [Variables](#variables)
 - [Showcase](#showcase)
 - [License](#license)
 
@@ -74,6 +90,37 @@ async componentDidMount() {
 This plugin supports all languages supported by [Prism.js](https://prismjs.com). Nothing particular needs to be specified because the component [@deckdeckgo/highlight-code] will load them automatically at runtime.
 
 ## Styling
+
+Code blocks are displayed in stylish cards but the behavior could be customized.
+
+### Terminal
+
+Per default, code blocks are going to be displayed in `carbon` ("Macish like") container.
+
+It is also possible to use `ubuntu` (an Ubuntu-like container) or `none` (no window container).
+
+Such settings can be provided in the configuration of the plugin.
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-highlight-code`,
+          options: {
+            terminal: 'ubuntu'
+          }
+        },
+      ],
+    },
+  },
+]
+```
+
+### Variables
 
 See the [@deckdeckgo/highlight-code] documentation for the list of CSS4 styling variables.
 
