@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-highlight-code",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Adds stylish cards and syntax highlighting to code blocks in markdown files",
   "main": "index.js",
   "dependencies": {
