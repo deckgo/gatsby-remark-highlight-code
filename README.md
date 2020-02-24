@@ -8,20 +8,20 @@ The inspiration for the design of the "Macish" cards comes from the amazing [car
 
 Carbon:
 
-<div align="center">
-  <img src="static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="300px">
+<div align="left">
+  <img src="static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="440px">
 </div>
 
 Ubuntu:
 
-<div align="center">
-  <img src="static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="300px">
+<div align="left">
+  <img src="static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="440px">
 </div>
 
 None:
 
-<div align="center">
-  <img src="static/screenshot-none.png" alt="Syntax highlighting code block" width="300px">
+<div align="left">
+  <img src="static/screenshot-none.png" alt="Syntax highlighting code block" width="440px">
 </div>
 
 ## Table of contents
