@@ -4,10 +4,24 @@ Adds stylish cards and syntax highlighting to code blocks in markdown files usin
 
 This code highlighter is developed with [Stencil](https://stenciljs.com) and use [Prism.js](https://prismjs.com) under the hood.
 
-Furthermore, the inspiration for the design of the cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code.
+The inspiration for the design of the "Macish" cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code, and for the "Ubuntu-ish" from the [article](https://dev.to/codypearce/ubuntu-terminal-in-css-1aeo) of [Cody Pearce](https://twitter.com/codyapearce).
+
+Carbon:
 
 <div align="center">
-  <img src="static/screenshot.png" alt="Syntax highlighting code block as card" width="100%">
+  <img src="static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="300px">
+</div>
+
+Ubuntu:
+
+<div align="center">
+  <img src="static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="300px">
+</div>
+
+None:
+
+<div align="center">
+  <img src="static/screenshot-none.png" alt="Syntax highlighting code block" width="300px">
 </div>
 
 ## Table of contents
