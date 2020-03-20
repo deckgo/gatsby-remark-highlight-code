@@ -73,6 +73,8 @@ For that purpose, load the [@deckdeckgo/highlight-code] once in one of your page
 
 For example add the following in the main file of your website, in your `index.js`, or in the template of your blog or simply load it where you need it.
 
+#### Class component
+
 ```javascript
 async componentDidMount() {
     try {
@@ -84,6 +86,34 @@ async componentDidMount() {
     }
 }
 ```  
+
+#### Functional component with hooks
+
+```javascript
+import React, { Fragment, useEffect } from "react";
+import { defineCustomElements as deckdeckgoLoader} from '@deckdeckgo/highlight-code/dist/loader';
+
+const yourComponent = () => {
+
+  useEffect(() => {
+    try {
+      deckdeckgoLoader(window);
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
+  return (
+    <Fragment>
+      <ComponentOne />
+      <ComponentTwo />
+      [...]
+    </Fragment>
+  )
+}
+
+export default yourComponent;
+```
 
 ## Language
 
