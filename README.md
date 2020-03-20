@@ -67,52 +67,13 @@ plugins: [
 
 ### Load the component
 
-[Stencil](https://stenciljs.com) components should currently be loaded at runtime (see issue [#1724](https://github.com/ionic-team/stencil/issues/1724)).
+Load the [@deckdeckgo/highlight-code] once in one of your pages or components.
 
-For that purpose, load the [@deckdeckgo/highlight-code] once in one of your pages or components are mounted.
-
-For example add the following in the main file of your website, in your `index.js`, or in the template of your blog or simply load it where you need it.
-
-#### Class component
+For example add the following in the main file of your website, in your `index.js`, or in your `layout.js`, in the template of your blog or simply load it where you need it.
 
 ```javascript
-async componentDidMount() {
-    try {
-        const deckdeckgoHighlightCodeLoader = require("@deckdeckgo/highlight-code/dist/loader")
-    
-        await deckdeckgoHighlightCodeLoader.defineCustomElements(window);
-    } catch (err) {
-        console.error(err);
-    }
-}
-```  
-
-#### Functional component with hooks
-
-```javascript
-import React, { Fragment, useEffect } from "react";
-import { defineCustomElements as deckdeckgoLoader} from '@deckdeckgo/highlight-code/dist/loader';
-
-const yourComponent = () => {
-
-  useEffect(() => {
-    try {
-      deckdeckgoLoader(window);
-    } catch (err) {
-      console.log(err);
-    }
-  }, []);
-
-  return (
-    <Fragment>
-      <ComponentOne />
-      <ComponentTwo />
-      [...]
-    </Fragment>
-  )
-}
-
-export default yourComponent;
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 ```
 
 ## Language
