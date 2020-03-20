@@ -3,7 +3,7 @@
 
 ### Features
 
-* upgrade Web Component `@deckdeckgo/highlight-code` which doesn't need any workaround anymore in order to be loaded
+* upgrade Web Component `@deckdeckgo/highlight-code`
 
 <a name="1.1.0"></a>
 # 1.1.0 (2020-02-24)
