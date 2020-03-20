@@ -6,12 +6,12 @@
   "dependencies": {
     "gatsby-node-helpers": "^0.3.0",
     "lodash": "^4.17.15",
-    "mdast-util-to-string": "^1.0.8",
+    "mdast-util-to-string": "^1.1.0",
     "unist-util-visit": "^2.0.2"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0",
-    "@deckdeckgo/highlight-code": "^1.0.0-rc.3-2"
+    "@deckdeckgo/highlight-code": "^1.0.0"
   },
   "repository": {
     "type": "git",
