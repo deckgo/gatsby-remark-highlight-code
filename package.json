@@ -11,7 +11,7 @@
   },
   "peerDependencies": {
     "gatsby": "^2.0.0",
-    "@deckdeckgo/highlight-code": "^1.0.0"
+    "@deckdeckgo/highlight-code": "^1.0.2"
   },
   "repository": {
     "type": "git",
