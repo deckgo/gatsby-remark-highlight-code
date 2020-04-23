@@ -23,24 +23,24 @@ module.exports = ({ markdownAST }, pluginOptions) => {
 }
 
 
-function generatePropsString(pluginOptions){
-   if(!pluginOptions){
-     return ""
-   }
-   let str = ""
-   const  {terminal, lineNumbers, editable } = pluginOptions
+function generatePropsString(pluginOptions) {
+  if (!pluginOptions) {
+    return ""
+  }
+  let str = ""
+  const { terminal, lineNumbers, editable } = pluginOptions;
 
-   if(terminal){
-      str += `terminal="${pluginOptions.terminal}" `    
-   }
+  if (terminal) {
+    str += `terminal="${pluginOptions.terminal}" `
+  }
 
-   if(lineNumbers === true){
-     str += `line-numbers="true" `
-   }
+  if (lineNumbers === true) {
+    str += `line-numbers="true" `
+  }
 
-   if(editable === true) {
-     str+= `editable="true" `
-   }
-   return str
+  if (editable === true) {
+    str += `editable="true" `
+  }
+  return str;
 }
 
