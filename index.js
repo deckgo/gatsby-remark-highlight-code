@@ -5,13 +5,11 @@ const _ = require(`lodash`)
 
 module.exports = ({ markdownAST }, pluginOptions) => {
 
-    const terminal = pluginOptions && pluginOptions.terminal && pluginOptions.terminal !== '' ? pluginOptions.terminal : undefined
-
     visit(markdownAST, "code", node => {
         const text = toString(node)
-
+        const properties = generatePropsString(pluginOptions) 
         const html = `
-        <deckgo-highlight-code ${node && node.lang !== null ? `language="${node.lang}"` : ''} ${terminal !== undefined ? `terminal="${terminal}"` : ''}>
+        <deckgo-highlight-code ${node && node.lang !== null ? `language="${node.lang}"` : ''}  ${properties}>
           <code slot="code">${_.escape(text)}</code>
         </deckgo-highlight-code>
       `
@@ -23,3 +21,26 @@ module.exports = ({ markdownAST }, pluginOptions) => {
 
     return markdownAST
 }
+
+
+function generatePropsString(pluginOptions) {
+  if (!pluginOptions) {
+    return ""
+  }
+  let str = ""
+  const { terminal, lineNumbers, editable } = pluginOptions;
+
+  if (terminal) {
+    str += `terminal="${pluginOptions.terminal}" `
+  }
+
+  if (lineNumbers === true) {
+    str += `line-numbers="true" `
+  }
+
+  if (editable === true) {
+    str += `editable="true" `
+  }
+  return str;
+}
+

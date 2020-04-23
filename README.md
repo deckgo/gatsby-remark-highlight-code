@@ -30,6 +30,7 @@ None:
 - [How to use](#how-to-use)
     - [Configure](#configure)
     - [Load the component](#load-the-component)
+    - [Plugin Options](#plugin-options)
 - [Language](#language)
 - [Styling](#styling)
     - [Terminal](#terminal)
@@ -75,6 +76,13 @@ For example add the following in the main file of your website, in your `index.j
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 deckDeckGoHighlightElement();
 ```
+
+### Plugin Options
+| property | type | default |
+|----------|------|---------| 
+| terminal | carbon, ubuntu or none | carbon|
+| editable | boolean | false
+| lineNumbers | boolean | false  |
 
 ## Language
 
