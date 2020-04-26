@@ -1,3 +1,11 @@
+<a name="1.3.1"></a>
+
+# 1.3.1 (2020-04-26)
+
+### Features
+
+- update `deckdeckgo-highlight-code` peer dependencies version ([#7](https://github.com/deckgo/gatsby-remark-highlight-code/issues/7))
+
 <a name="1.3.0"></a>
 
 # 1.3.0 (2020-04-23)
