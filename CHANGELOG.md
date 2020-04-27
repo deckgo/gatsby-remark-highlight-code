@@ -1,3 +1,11 @@
+<a name="1.3.2"></a>
+
+# 1.3.2 (2020-04-27)
+
+### Fix
+
+- update `deckdeckgo-highlight-code` for not loaded languages ([#9](https://github.com/deckgo/gatsby-remark-highlight-code/issues/9))
+
 <a name="1.3.1"></a>
 
 # 1.3.1 (2020-04-26)
