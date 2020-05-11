@@ -1,10 +1,18 @@
+<a name="1.3.3"></a>
+
+# 1.3.3 (2020-05-11)
+
+### Fix
+
+- `head.querySelector` build errors ([#10](https://github.com/deckgo/gatsby-remark-highlight-code/issues/10)) 
+
 <a name="1.3.2"></a>
 
 # 1.3.2 (2020-04-27)
 
 ### Fix
 
-- update `deckdeckgo-highlight-code` for not loaded languages ([#9](https://github.com/deckgo/gatsby-remark-highlight-code/issues/9))
+- update `@deckdeckgo/highlight-code` for not loaded languages ([#9](https://github.com/deckgo/gatsby-remark-highlight-code/issues/9))
 
 <a name="1.3.1"></a>
 
@@ -12,7 +20,7 @@
 
 ### Features
 
-- update `deckdeckgo-highlight-code` peer dependencies version ([#7](https://github.com/deckgo/gatsby-remark-highlight-code/issues/7))
+- update `@deckdeckgo/highlight-code` peer dependencies version ([#7](https://github.com/deckgo/gatsby-remark-highlight-code/issues/7))
 
 <a name="1.3.0"></a>
 
