@@ -34,6 +34,7 @@ None:
 - [Language](#language)
 - [Styling](#styling)
     - [Terminal](#terminal)
+    - [Theme](#theme)
     - [Variables](#variables)
 - [Showcase](#showcase)
 - [License](#license)
@@ -80,9 +81,10 @@ deckDeckGoHighlightElement();
 ### Plugin Options
 | property | type | default |
 |----------|------|---------| 
-| terminal | carbon, ubuntu or none | carbon|
-| editable | boolean | false
-| lineNumbers | boolean | false  |
+| terminal | `carbon`, `ubuntu` or `none` | `carbon` |
+| theme | `3024-night` , `a11y-dark` , `blackboard` , `base16-dark` , `base16-light` , `cobalt` , `dracula` , `duotone` , `hopscotch` , `lucario` , `material` , `monokai` , `night-owl` , `nord` , `oceanic-next` , `one-light` , `one-dark` , `panda` , `paraiso` , `seti` , `shades-of-purple` , `solarized-dark` , `solarized-light` , `synthwave` , `twilight` , `verminal` , `vscode` , `yeti` , `zenburn` | `dracula` |
+| editable | `boolean` | `false` |
+| lineNumbers | `boolean` | `false`  |
 
 ## Language
 
@@ -118,6 +120,32 @@ plugins: [
   },
 ]
 ```
+
+### Theme
+
+The terminal `carbon` can be themed with a wide range of predefined themes.
+
+These can be tried out in the [@deckdeckgo/highlight-code] documentation and applied as following:
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-highlight-code`,
+          options: {
+            terminal: 'carbon',
+            theme: 'blackboard'
+          }
+        },
+      ],
+    },
+  },
+]
+``` 
 
 ### Variables
 

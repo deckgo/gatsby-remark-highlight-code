@@ -27,11 +27,16 @@ function generatePropsString(pluginOptions) {
   if (!pluginOptions) {
     return "";
   }
+
   let str = "";
-  const { terminal, lineNumbers, editable } = pluginOptions;
+  const { terminal, lineNumbers, editable, theme } = pluginOptions;
 
   if (terminal) {
     str += `terminal="${pluginOptions.terminal}" `;
+  }
+
+  if (theme) {
+    str += `theme="${pluginOptions.theme}" `;
   }
 
   if (lineNumbers === true) {
@@ -41,5 +46,6 @@ function generatePropsString(pluginOptions) {
   if (editable === true) {
     str += `editable="true" `;
   }
+
   return str;
 }
