@@ -1,3 +1,11 @@
+<a name="1.4.0"></a>
+
+# 1.4.0 (2020-05-21)
+
+### Features
+
+- themes for the terminal carbon ([#12](https://github.com/deckgo/gatsby-remark-highlight-code/issues/12))
+
 <a name="1.3.3"></a>
 
 # 1.3.3 (2020-05-11)
