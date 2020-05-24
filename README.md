@@ -1,8 +1,10 @@
 # gatsby-remark-highlight-code
 
-Adds stylish cards and syntax highlighting to code blocks in markdown files using the [@deckdeckgo/highlight-code] Web Component.
+Adds stylish cards and syntax highlighting to code blocks in markdown files of your [Gatsby](https://www.gatsbyjs.org/) website.
 
-This code highlighter is developed with [Stencil](https://stenciljs.com) and use [Prism.js](https://prismjs.com) under the hood.
+The Web Component behind this feature was created for the web editor for presentations [DeckDeckGo](https://deckdeckgo.com).
+
+It is implemented with [Stencil](https://stenciljs.com) and use [Prism.js](https://prismjs.com) under the hood.
 
 The inspiration for the design of the "Macish" cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code, and for the "Ubuntu-ish" from the [article](https://dev.to/codypearce/ubuntu-terminal-in-css-1aeo) of [Cody Pearce](https://twitter.com/codyapearce).
 
