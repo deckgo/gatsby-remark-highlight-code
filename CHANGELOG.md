@@ -1,3 +1,11 @@
+<a name="1.4.1"></a>
+
+# 1.4.1 (2020-06-14)
+
+### Style
+
+- improve line numbers color and background (inherit terminal's background and color of the code's comments)
+
 <a name="1.4.0"></a>
 
 # 1.4.0 (2020-05-21)
