@@ -11,19 +11,19 @@ The inspiration for the design of the "Macish" cards comes from the amazing [car
 Carbon:
 
 <div align="center">
-  <img src="static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="90%">
+  <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="90%">
 </div>
 
 Ubuntu:
 
 <div align="center">
-  <img src="static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="95%">
+  <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="95%">
 </div>
 
 None:
 
 <div align="center">
-  <img src="static/screenshot-none.png" alt="Syntax highlighting code block" width="95%">
+  <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-none.png" alt="Syntax highlighting code block" width="95%">
 </div>
 
 ## Table of contents
