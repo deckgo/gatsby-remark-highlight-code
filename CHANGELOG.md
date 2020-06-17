@@ -1,3 +1,11 @@
+<a name="1.4.2"></a>
+
+# 1.4.2 (2020-06-17)
+
+### Documentation
+
+- image tag src attribute to full URL path ([#14](https://github.com/deckgo/gatsby-remark-highlight-code/issues/14))
+
 <a name="1.4.1"></a>
 
 # 1.4.1 (2020-06-14)
