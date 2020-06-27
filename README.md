@@ -8,19 +8,29 @@ It is implemented with [Stencil](https://stenciljs.com) and use [Prism.js](https
 
 The inspiration for the design of the "Macish" cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code, and for the "Ubuntu-ish" from the [article](https://dev.to/codypearce/ubuntu-terminal-in-css-1aeo) of [Cody Pearce](https://twitter.com/codyapearce).
 
-Carbon:
+## Designs
+
+### 1. Carbon
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-carbon.png" alt="Syntax highlighting code block as Carbon card" width="90%">
 </div>
 
-Ubuntu:
+Multiple theming options.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-carbon-themes.png" alt="Syntax highlighting code block as Carbon card" width="90%">
+</div>
+
+### 2. Ubuntu
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-ubuntu.png" alt="Syntax highlighting code block as Ubuntu card" width="95%">
 </div>
 
-None:
+### 3. None
+
+No predefined cards but stylable with multiple [CSS variables](#variables).
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/screenshot-none.png" alt="Syntax highlighting code block" width="95%">
