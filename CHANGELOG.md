@@ -1,3 +1,11 @@
+<a name="1.4.3"></a>
+
+# 1.4.3 (2020-07-03)
+
+### Style
+
+- update highlight code component with a default overflow-y set to `auto` instead of `scroll`
+
 <a name="1.4.2"></a>
 
 # 1.4.2 (2020-06-17)
