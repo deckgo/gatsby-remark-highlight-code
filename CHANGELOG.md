@@ -4,7 +4,7 @@
 
 ### Features
 
-- trim the value of the generated html node
+- trim the value of the generated html node ([#16](https://github.com/deckgo/gatsby-remark-highlight-code/pull/16))
 
 <a name="1.4.3"></a>
 
