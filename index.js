@@ -13,7 +13,7 @@ module.exports = ({ markdownAST }, pluginOptions) => {
         }  ${properties}>
           <code slot="code">${_.escape(text)}</code>
         </deckgo-highlight-code>
-      `;
+      `.trim();
 
     node.type = "html";
     node.children = undefined;
