@@ -1,3 +1,11 @@
+<a name="1.4.4"></a>
+
+# 1.4.4 (2020-07-06)
+
+### Features
+
+- trim the value of the generated html node
+
 <a name="1.4.3"></a>
 
 # 1.4.3 (2020-07-03)
