@@ -38,18 +38,24 @@ No predefined cards but stylable with multiple [CSS variables](#variables).
 
 ## Table of contents
 
-- [Install](#install)
-- [How to use](#how-to-use)
+- [gatsby-remark-highlight-code](#gatsby-remark-highlight-code)
+  - [Designs](#designs)
+    - [1. Carbon](#1-carbon)
+    - [2. Ubuntu](#2-ubuntu)
+    - [3. None](#3-none)
+  - [Table of contents](#table-of-contents)
+  - [Install](#install)
+  - [How to use](#how-to-use)
     - [Configure](#configure)
     - [Load the component](#load-the-component)
     - [Plugin Options](#plugin-options)
-- [Language](#language)
-- [Styling](#styling)
+  - [Language](#language)
+  - [Styling](#styling)
     - [Terminal](#terminal)
     - [Theme](#theme)
     - [Variables](#variables)
-- [Showcase](#showcase)
-- [License](#license)
+  - [Showcase](#showcase)
+  - [License](#license)
 
 ## Install
 
@@ -62,6 +68,8 @@ npm install --save gatsby-transformer-remark gatsby-remark-highlight-code @deckd
 In order to use this plugin, it should be first `configured` and then `loaded` at runtime.
 
 ### Configure
+
+If you are using "gatsby-transformer-remark", you can add "gatsby-remark-highlight-code" like this:
 
 ```javascript
 // In your gatsby-config.js
@@ -79,6 +87,25 @@ plugins: [
 ]
 ```
 
+If you are using "gatsby-plugin-mdx", you can add "gatsby-remark-highlight-code" like this:
+
+```javascript
+// In your gatsby-config.js
+plugins: [
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+          },
+        ],
+      },
+    },
+]
+```
+
 ### Load the component
 
 Load the [@deckdeckgo/highlight-code] once in one of your pages or components.
@@ -91,12 +118,12 @@ deckDeckGoHighlightElement();
 ```
 
 ### Plugin Options
-| property | type | default |
-|----------|------|---------| 
-| terminal | `carbon`, `ubuntu` or `none` | `carbon` |
-| theme | `3024-night` , `a11y-dark` , `blackboard` , `base16-dark` , `base16-light` , `cobalt` , `dracula` , `duotone` , `hopscotch` , `lucario` , `material` , `monokai` , `night-owl` , `nord` , `oceanic-next` , `one-light` , `one-dark` , `panda` , `paraiso` , `seti` , `shades-of-purple` , `solarized-dark` , `solarized-light` , `synthwave` , `twilight` , `verminal` , `vscode` , `yeti` , `zenburn` | `dracula` |
-| editable | `boolean` | `false` |
-| lineNumbers | `boolean` | `false`  |
+| property    | type                                                                                                                                                                                                                                                                                                                                                                                                   | default   |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
+| terminal    | `carbon`, `ubuntu` or `none`                                                                                                                                                                                                                                                                                                                                                                           | `carbon`  |
+| theme       | `3024-night` , `a11y-dark` , `blackboard` , `base16-dark` , `base16-light` , `cobalt` , `dracula` , `duotone` , `hopscotch` , `lucario` , `material` , `monokai` , `night-owl` , `nord` , `oceanic-next` , `one-light` , `one-dark` , `panda` , `paraiso` , `seti` , `shades-of-purple` , `solarized-dark` , `solarized-light` , `synthwave` , `twilight` , `verminal` , `vscode` , `yeti` , `zenburn` | `dracula` |
+| editable    | `boolean`                                                                                                                                                                                                                                                                                                                                                                                              | `false`   |
+| lineNumbers | `boolean`                                                                                                                                                                                                                                                                                                                                                                                              | `false`   |
 
 ## Language
 
