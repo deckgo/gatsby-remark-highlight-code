@@ -1,3 +1,11 @@
+<a name="1.4.5"></a>
+
+# 1.4.5 (2020-07-17)
+
+### Documentation
+
+- update readme for `gatsby-plugin-mdx` ([#17](https://github.com/deckgo/gatsby-remark-highlight-code/issues/17))
+
 <a name="1.4.4"></a>
 
 # 1.4.4 (2020-07-06)
