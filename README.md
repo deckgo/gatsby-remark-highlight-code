@@ -38,24 +38,18 @@ No predefined cards but stylable with multiple [CSS variables](#variables).
 
 ## Table of contents
 
-- [gatsby-remark-highlight-code](#gatsby-remark-highlight-code)
-  - [Designs](#designs)
-    - [1. Carbon](#1-carbon)
-    - [2. Ubuntu](#2-ubuntu)
-    - [3. None](#3-none)
-  - [Table of contents](#table-of-contents)
-  - [Install](#install)
-  - [How to use](#how-to-use)
+- [Install](#install)
+- [How to use](#how-to-use)
     - [Configure](#configure)
     - [Load the component](#load-the-component)
     - [Plugin Options](#plugin-options)
-  - [Language](#language)
-  - [Styling](#styling)
+- [Language](#language)
+- [Styling](#styling)
     - [Terminal](#terminal)
     - [Theme](#theme)
     - [Variables](#variables)
-  - [Showcase](#showcase)
-  - [License](#license)
+- [Showcase](#showcase)
+- [License](#license)
 
 ## Install
 
