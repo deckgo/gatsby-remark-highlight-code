@@ -1,3 +1,11 @@
+<a name="1.4.6"></a>
+
+# 1.4.6 (2020-08-08)
+
+### Features
+
+- bump highlight-code dependencies to last version including reference to most recent prismjs
+
 <a name="1.4.5"></a>
 
 # 1.4.5 (2020-07-17)
