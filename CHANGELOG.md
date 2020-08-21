@@ -1,3 +1,11 @@
+<a name="1.4.7"></a>
+
+# 1.4.7 (2020-08-21)
+
+### Fix
+
+- load required scripts for prismjs / cannot highlight code language `php` ([@deckdeckgo#848](https://github.com/deckgo/deckdeckgo/issues/848))
+
 <a name="1.4.6"></a>
 
 # 1.4.6 (2020-08-08)
