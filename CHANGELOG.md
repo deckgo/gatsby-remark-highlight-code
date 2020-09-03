@@ -1,3 +1,13 @@
+<a name="2.0.0"></a>
+
+# 2.0.0 (2020-09-03)
+
+### Breaking Changes
+
+- IE11, Edge 16-18 and Safari 10 not supported
+
+P.S.: Actually, I am not sure these were ever supported, but at least now, it is clear they are not 😉.
+
 <a name="1.4.7"></a>
 
 # 1.4.7 (2020-08-21)
