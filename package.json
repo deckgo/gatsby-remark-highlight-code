@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-highlight-code",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Adds stylish cards and syntax highlighting to code blocks in markdown files",
   "main": "index.js",
   "dependencies": {
@@ -11,7 +11,7 @@
   },
   "peerDependencies": {
     "gatsby": "^2.0.0",
-    "@deckdeckgo/highlight-code": "^2.0.0"
+    "@deckdeckgo/highlight-code": "^2.1.0"
   },
   "repository": {
     "type": "git",

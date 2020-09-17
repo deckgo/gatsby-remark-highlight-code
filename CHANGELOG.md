@@ -1,3 +1,9 @@
+# 2.1.0 (2020-09-17)
+
+### Features
+
+- ability to remove the 3 dots in the window ([#21](https://github.com/deckgo/gatsby-remark-highlight-code/issues/21))
+
 <a name="2.0.0"></a>
 
 # 2.0.0 (2020-09-03)
