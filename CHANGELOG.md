@@ -1,3 +1,17 @@
+# 2.1.1 (2020-12-10)
+
+Inherit `@deckdeckgo/highlight-code` v2.2.2:
+
+### Features
+
+- display a `console.error` if the language is not supported
+
+### Fix
+
+- support alias (such as `html` for `markup`)
+- load alias required scripts
+- required scripts loading race condition
+
 # 2.1.0 (2020-09-17)
 
 ### Features
