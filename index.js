@@ -2,19 +2,23 @@ const visit = require("unist-util-visit");
 const toString = require("mdast-util-to-string");
 
 const _ = require(`lodash`);
+const { parseLanguageAndHighlightedLines } = require('./utils');
 
 module.exports = ({ markdownAST }, pluginOptions) => {
   visit(markdownAST, "code", (node) => {
+    let lang = '', highlightLines;
+    if (node && node.lang !== null) {
+      ({ lang, highlightLines } = parseLanguageAndHighlightedLines(node));
+    }
     const text = toString(node);
     const properties = generatePropsString(pluginOptions);
     const html = `
         <deckgo-highlight-code ${
-          node && node.lang !== null ? `language="${node.lang}"` : ""
-        }  ${properties}>
+          lang
+        }  ${properties} highlight-lines="${highlightLines}">
           <code slot="code">${_.escape(text)}</code>
         </deckgo-highlight-code>
       `.trim();
-
     node.type = "html";
     node.children = undefined;
     node.value = html;
