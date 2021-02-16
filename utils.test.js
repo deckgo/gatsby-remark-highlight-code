@@ -28,14 +28,14 @@ test("detects the languages correctly", () => {
 test("detects the highlight-lines correctly", () => {
   expect(
     parseLanguageAndHighlightedLines(dartLangNode).highlightLines
-  ).toBe('3,4,5');
+  ).toBe('3 4 5');
   expect(
     parseLanguageAndHighlightedLines(dartLangWithSpacesNode).highlightLines
-  ).toBe('5,9,34,39 44');
+  ).toBe('5 9 34 39,44');
   expect(
     parseLanguageAndHighlightedLines(typescriptLangNode).highlightLines
   ).toBe('');
   expect(
     parseLanguageAndHighlightedLines(typescriptWithLinesGroupNode).highlightLines
-  ).toBe('3,4,5 9,22 45');
+  ).toBe('3 4 5,9 22,45');
 });

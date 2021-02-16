@@ -1,6 +1,6 @@
 /**
  * Returns the parsed language and the highlighted lines.
- * For example, ```dart{3, 2, 5-9} will output {lang: 'dart', highlightLines: '3,2,5 9'}
+ * For example, ```dart{3, 2, 5-9} will output {lang: 'dart', highlightLines: '3 2 5,9'}
  * which is compatible with the <deckdeckgo-highlight-code> component (https://docs.deckdeckgo.com/components/code/)
  * @param {Markdown Node} node
  */
@@ -25,11 +25,11 @@ const parseLanguageAndHighlightedLines = (node) => {
       const numbOrGroup = chunk.trim();
       if (numbOrGroup.includes("-")) {
         // is a group of numbers. e.g. {3-10}
-        return [...acc, numbOrGroup.replace("-", " ")];
+        return [...acc, numbOrGroup.replace("-", ",")];
       }
       return [...acc, numbOrGroup];
     }, [])
-    .join(",");
+    .join(" ");
 
   return {
     lang,
