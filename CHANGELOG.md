@@ -1,3 +1,8 @@
+# 2.2.0 (2021-02-17)
+
+- support for lines highlighting ([#28](https://github.com/deckgo/gatsby-remark-highlight-code/issues/28))
+- bump `@deckdeckgo/highlight-code` peer dependency requirement to `v2.4.0`
+
 # 2.1.1 (2020-12-10)
 
 Inherit `@deckdeckgo/highlight-code` v2.2.2:
