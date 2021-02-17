@@ -48,6 +48,7 @@ No predefined cards but stylable with multiple [CSS variables](#variables).
     - [Terminal](#terminal)
     - [Theme](#theme)
     - [Variables](#variables)
+    - [Lines highlighting](#lines-highlighting)
 - [Showcase](#showcase)
 - [License](#license)
 
@@ -183,6 +184,12 @@ plugins: [
 ### Variables
 
 See the [@deckdeckgo/highlight-code] documentation for the list of CSS4 styling variables.
+
+### Lines highlighting
+
+Single or multiple lines of code can be highlighted.
+
+The Markdown syntax is the following: next to the specification of the language, between brackets `{}`, the lines should be provided in a comma separated list. A single line can be provided (for example `dart{1}`) or multiple one, from and to being separated with a dash (for example `javascript{3-6}`). Both single or multiple lines can be mixed (for example `typescript{2, 3,4, 7, 8-15}`).
 
 ## Showcase
 
