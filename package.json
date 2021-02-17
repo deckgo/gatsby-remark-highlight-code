@@ -3,6 +3,9 @@
   "version": "2.1.1",
   "description": "Adds stylish cards and syntax highlighting to code blocks in markdown files",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "gatsby-node-helpers": "^0.3.0",
     "lodash": "^4.17.15",
@@ -38,6 +41,7 @@
     "markdown"
   ],
   "devDependencies": {
+    "jest": "^26.6.3",
     "prettier": "2.0.5"
   },
   "husky": {
