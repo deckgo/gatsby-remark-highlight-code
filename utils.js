@@ -8,8 +8,10 @@ const parseLanguageAndHighlightedLines = (node) => {
   const highlightLinesRegex = /{(.*?)}/g;
   let lang = node.lang;
   let highlightLines = "";
+
   const regexExecResults = highlightLinesRegex.exec(node.lang);
-  if (!regexExecResults) { // no lines to highlight
+  if (!regexExecResults) {
+    // no lines to highlight
     return {
       lang,
       highlightLines,
@@ -27,7 +29,7 @@ const parseLanguageAndHighlightedLines = (node) => {
         // is a group of numbers. e.g. {3-10}
         return [...acc, numbOrGroup.replace("-", ",")];
       }
-      return [...acc, numbOrGroup];
+      return [...acc, `${numbOrGroup},${numbOrGroup}`];
     }, [])
     .join(" ");
 
