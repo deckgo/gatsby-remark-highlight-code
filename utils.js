@@ -4,7 +4,7 @@ const _ = require(`lodash`);
 /**
  * Returns the parsed language and the highlighted lines.
  * For example, ```dart{3, 2, 5-9} will output {lang: 'dart', highlightLines: '3 2 5,9'}
- * which is compatible with the <deckdeckgo-highlight-code> component (https://docs.deckdeckgo.com/components/code/)
+ * which is compatible with the <deckdeckgo-highlight-code> component (https://docs.deckdeckgo.com/?path=/story/components-highlight-code--highlight-code)
  * @param {Markdown Node} node
  */
 const parseLanguageAndHighlightedLines = (node) => {

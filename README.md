@@ -199,4 +199,4 @@ I (David here) use this plugin in the blog of my personal website [daviddalbusco
 
 MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com) and [Nicolas Mattia](mailto:nicolas@nmattia.com) 
 
-[@deckdeckgo/highlight-code]: https://docs.deckdeckgo.com/components/code
+[@deckdeckgo/highlight-code]: https://docs.deckdeckgo.com/?path=/story/components-highlight-code--highlight-code
