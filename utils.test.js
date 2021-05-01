@@ -10,56 +10,56 @@ describe("parse node to html", () => {
   it("should parse no language and no highlight lines (default)", () => {
     const html = parseNodeHtml(
         {
-          text: "<code>Hello World</code>",
+          value: "hello world",
           lang: "",
         },
         {}
     );
 
     expect(html).toEqual(`<deckgo-highlight-code   >
-          <code slot="code"></code>
+          <code slot="code">hello world</code>
         </deckgo-highlight-code>`);
   });
 
   it("should parse javascript", () => {
     const html = parseNodeHtml(
         {
-          text: "<code>Hello World</code>",
+          value: "hello world",
           lang: "javascript",
         },
         {}
     );
 
     expect(html).toEqual(`<deckgo-highlight-code language="javascript"  >
-          <code slot="code"></code>
+          <code slot="code">hello world</code>
         </deckgo-highlight-code>`);
   });
 
   it("should parse a specific language", () => {
     const html = parseNodeHtml(
       {
-        text: "<code>Hello World</code>",
+        value: "hello world",
         lang: "typescript",
       },
       {}
     );
 
     expect(html).toEqual(`<deckgo-highlight-code language="typescript"  >
-          <code slot="code"></code>
+          <code slot="code">hello world</code>
         </deckgo-highlight-code>`);
   });
 
   it("should parse highlighted lines", () => {
     const html = parseNodeHtml(
         {
-          text: "<code>Hello World</code>",
+          value: "hello world",
           lang: "dart{3, 2, 5-9}",
         },
         {}
     );
 
     expect(html).toEqual(`<deckgo-highlight-code language="dart"  highlight-lines="3 2 5,9">
-          <code slot="code"></code>
+          <code slot="code">hello world</code>
         </deckgo-highlight-code>`);
   });
 });
