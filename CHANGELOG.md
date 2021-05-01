@@ -1,3 +1,10 @@
+# 2.2.1 (2021-05-01)
+
+### Fix
+
+- syntax highlighting for languages other than `javascript`
+- empty language default to no attribute `language`
+
 # 2.2.0 (2021-02-17)
 
 ### Features
