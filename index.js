@@ -13,9 +13,7 @@ module.exports = ({ markdownAST }, pluginOptions) => {
     const text = toString(node);
     const properties = generatePropsString(pluginOptions);
     const html = `
-        <deckgo-highlight-code ${
-          lang
-        }  ${properties} highlight-lines="${highlightLines}">
+        <deckgo-highlight-code language=${lang}  ${properties} highlight-lines="${highlightLines}">
           <code slot="code">${_.escape(text)}</code>
         </deckgo-highlight-code>
       `.trim();
