@@ -1,3 +1,10 @@
+# 3.0.0 (2021-05-22)
+
+### Breaking Changes
+
+- bump peer dependency `gatsby` to v3
+- bump peer dependency `@deckdeckgo/highlight-code` to v3
+
 # 2.2.1 (2021-05-01)
 
 ### Fix
