@@ -4,6 +4,7 @@
 
 - bump peer dependency `gatsby` to v3
 - bump peer dependency `@deckdeckgo/highlight-code` to v3
+- highlight lines styling default behavior modified. Instead of background color highlighting, it uses a color contrast ("highlight opacity 1, no highlighted opacity 0.32")
 
 # 2.2.1 (2021-05-01)
 
