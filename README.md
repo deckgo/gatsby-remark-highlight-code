@@ -8,7 +8,7 @@ It is implemented with [Stencil](https://stenciljs.com) and use [Prism.js](https
 
 The inspiration for the design of the "Macish" cards comes from the amazing [carbon](https://carbon.now.sh), a tool to create and share beautiful images of your source code, and for the "Ubuntu-ish" from the [article](https://dev.to/codypearce/ubuntu-terminal-in-css-1aeo) of [Cody Pearce](https://twitter.com/codyapearce).
 
-## Designs
+## Design
 
 ### 1. Carbon
 
@@ -189,7 +189,13 @@ See the [@deckdeckgo/highlight-code] documentation for the list of CSS4 styling 
 
 Single or multiple lines of code can be highlighted.
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/deckgo/gatsby-remark-highlight-code/master/static/highlight-lines.gif" alt="Highlight lines" width="50%">
+</div>
+
 The Markdown syntax is the following: next to the specification of the language, between brackets `{}`, the lines should be provided in a comma separated list. A single line can be provided (for example `dart{1}`) or multiple one, from and to being separated with a dash (for example `javascript{3-6}`). Both single or multiple lines can be mixed (for example `typescript{2, 3,4, 7, 8-15}`).
+
+Animation between the selected highlighted groups can be triggered with the help of methods (see component [@deckdeckgo/highlight-code] documentation for details).  
 
 ## Showcase
 
