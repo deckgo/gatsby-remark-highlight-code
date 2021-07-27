@@ -69,15 +69,16 @@ function generatePropsString(pluginOptions) {
 
 function parseNodeHtml(node, pluginOptions) {
   let lang = "",
-      highlightLines;
+      highlightLines = undefined;
+
   if (node && node.lang !== null) {
     ({ lang, highlightLines } = parseLanguageAndHighlightedLines(node));
   }
   const text = toString(node);
   const properties = generatePropsString(pluginOptions);
 
-  const renderLang = lang !== '' ? `language="${lang}"` : '';
-  const renderHighlightLines = highlightLines !== '' ? `highlight-lines="${highlightLines}"` : '';
+  const renderLang = lang !== '' && lang !== undefined ? `language="${lang}"` : '';
+  const renderHighlightLines = highlightLines !== '' && highlightLines !== undefined ? `highlight-lines="${highlightLines}"` : '';
 
   return `<deckgo-highlight-code ${renderLang} ${properties} ${renderHighlightLines}>
           <code slot="code">${_.escape(text)}</code>
