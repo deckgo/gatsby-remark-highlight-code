@@ -2,7 +2,7 @@ const {
   dartLangNode,
   dartLangWithSpacesNode,
   typescriptLangNode,
-  typescriptWithLinesGroupNode,
+  typescriptWithLinesGroupNode
 } = require("./tests/mocks");
 const { parseLanguageAndHighlightedLines, parseNodeHtml } = require("./utils");
 
@@ -16,7 +16,7 @@ describe("parse node to html", () => {
         {}
     );
 
-    expect(html).toEqual(`<deckgo-highlight-code   >
+    expect(html).toEqual(`<deckgo-highlight-code language="javascript"  >
           <code slot="code">hello world</code>
         </deckgo-highlight-code>`);
   });
@@ -93,4 +93,5 @@ describe("languages extraction", () => {
         .highlightLines
     ).toBe("3 4 5,9 22,45");
   });
+
 });

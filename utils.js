@@ -76,7 +76,7 @@ function parseNodeHtml(node, pluginOptions) {
   const text = toString(node);
   const properties = generatePropsString(pluginOptions);
 
-  const renderLang = lang !== '' ? `language="${lang}"` : '';
+  const renderLang = lang !== '' ? `language="${lang}"` : 'language="javascript"';
   const renderHighlightLines = highlightLines !== '' ? `highlight-lines="${highlightLines}"` : '';
 
   return `<deckgo-highlight-code ${renderLang} ${properties} ${renderHighlightLines}>
