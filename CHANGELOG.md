@@ -5,6 +5,10 @@
 - no language provided results in an `undefined` value for the attribute highlight-lines ([#40](https://github.com/deckgo/gatsby-remark-highlight-code/issues/40))
 - highlight-lines information might be provided with the `node.lang` but als with `node.meta`
 
+### Build
+
+- bump build dependencies
+
 # 3.0.0 (2021-05-22)
 
 ### Breaking Changes
@@ -127,7 +131,7 @@ P.S.: Actually, I am not sure these were ever supported, but at least now, it is
 
 ### Fix
 
-- `head.querySelector` build errors ([#10](https://github.com/deckgo/gatsby-remark-highlight-code/issues/10)) 
+- `head.querySelector` build errors ([#10](https://github.com/deckgo/gatsby-remark-highlight-code/issues/10))
 
 <a name="1.3.2"></a>
 
