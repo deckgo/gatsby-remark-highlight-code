@@ -7,16 +7,19 @@ const _ = require(`lodash`);
  * which is compatible with the <deckdeckgo-highlight-code> component (https://docs.deckdeckgo.com/?path=/story/components-highlight-code--highlight-code)
  * @param {Markdown Node} node
  */
-const parseLanguageAndHighlightedLines = ({lang: nodeLang, meta}) => {
+const parseLanguageAndHighlightedLines = ({ lang: nodeLang, meta }) => {
   const highlightLinesRegex = /{(.*?)}/g;
 
-  const joinedNodeLang = `${nodeLang}${meta !== null && meta !== undefined ? meta : ''}`
+  const joinedNodeLang = `${nodeLang}${
+    meta !== null && meta !== undefined ? meta : ""
+  }`;
 
   let lang = joinedNodeLang;
   let highlightLines = "";
   const regexExecResults = highlightLinesRegex.exec(joinedNodeLang);
 
-  if (!regexExecResults) { // no lines to highlight
+  if (!regexExecResults) {
+    // no lines to highlight
     return {
       lang,
       highlightLines,
@@ -73,7 +76,7 @@ function generatePropsString(pluginOptions) {
 
 function parseNodeHtml(node, pluginOptions) {
   let lang = "",
-      highlightLines = undefined;
+    highlightLines = undefined;
 
   if (node && node.lang !== null) {
     ({ lang, highlightLines } = parseLanguageAndHighlightedLines(node));
@@ -81,8 +84,12 @@ function parseNodeHtml(node, pluginOptions) {
   const text = toString(node);
   const properties = generatePropsString(pluginOptions);
 
-  const renderLang = lang !== '' && lang !== undefined ? `language="${lang}"` : '';
-  const renderHighlightLines = highlightLines !== '' && highlightLines !== undefined ? `highlight-lines="${highlightLines}"` : '';
+  const renderLang =
+    lang !== "" && lang !== undefined ? `language="${lang}"` : "";
+  const renderHighlightLines =
+    highlightLines !== "" && highlightLines !== undefined
+      ? `highlight-lines="${highlightLines}"`
+      : "";
 
   return `<deckgo-highlight-code ${renderLang} ${properties} ${renderHighlightLines}>
           <code slot="code">${_.escape(text)}</code>

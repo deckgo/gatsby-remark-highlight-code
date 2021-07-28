@@ -40,15 +40,15 @@ No predefined cards but stylable with multiple [CSS variables](#variables).
 
 - [Install](#install)
 - [How to use](#how-to-use)
-    - [Configure](#configure)
-    - [Load the component](#load-the-component)
-    - [Plugin Options](#plugin-options)
+  - [Configure](#configure)
+  - [Load the component](#load-the-component)
+  - [Plugin Options](#plugin-options)
 - [Language](#language)
 - [Styling](#styling)
-    - [Terminal](#terminal)
-    - [Theme](#theme)
-    - [Variables](#variables)
-    - [Lines highlighting](#lines-highlighting)
+  - [Terminal](#terminal)
+  - [Theme](#theme)
+  - [Variables](#variables)
+  - [Lines highlighting](#lines-highlighting)
 - [Showcase](#showcase)
 - [License](#license)
 
@@ -74,12 +74,12 @@ plugins: [
     options: {
       plugins: [
         {
-          resolve: `gatsby-remark-highlight-code`
+          resolve: `gatsby-remark-highlight-code`,
         },
       ],
     },
   },
-]
+];
 ```
 
 If you are using "gatsby-plugin-mdx", you can add "gatsby-remark-highlight-code" like this:
@@ -87,18 +87,18 @@ If you are using "gatsby-plugin-mdx", you can add "gatsby-remark-highlight-code"
 ```javascript
 // In your gatsby-config.js
 plugins: [
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [".mdx", ".md"],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-highlight-code`,
-          },
-        ],
-      },
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      extensions: [".mdx", ".md"],
+      gatsbyRemarkPlugins: [
+        {
+          resolve: `gatsby-remark-highlight-code`,
+        },
+      ],
     },
-]
+  },
+];
 ```
 
 ### Load the component
@@ -108,11 +108,12 @@ Load the [@deckdeckgo/highlight-code] once in one of your pages or components.
 For example add the following in the main file of your website, in your `index.js`, or in your `layout.js`, in the template of your blog or simply load it where you need it.
 
 ```javascript
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 deckDeckGoHighlightElement();
 ```
 
 ### Plugin Options
+
 | property    | type                                                                                                                                                                                                                                                                                                                                                                                                   | default   |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- |
 | terminal    | `carbon`, `ubuntu` or `none`                                                                                                                                                                                                                                                                                                                                                                           | `carbon`  |
@@ -146,13 +147,13 @@ plugins: [
         {
           resolve: `gatsby-remark-highlight-code`,
           options: {
-            terminal: 'ubuntu'
-          }
+            terminal: "ubuntu",
+          },
         },
       ],
     },
   },
-]
+];
 ```
 
 ### Theme
@@ -171,15 +172,15 @@ plugins: [
         {
           resolve: `gatsby-remark-highlight-code`,
           options: {
-            terminal: 'carbon',
-            theme: 'blackboard'
-          }
+            terminal: "carbon",
+            theme: "blackboard",
+          },
         },
       ],
     },
   },
-]
-``` 
+];
+```
 
 ### Variables
 
@@ -195,7 +196,7 @@ Single or multiple lines of code can be highlighted.
 
 The Markdown syntax is the following: next to the specification of the language, between brackets `{}`, the lines should be provided in a comma separated list. A single line can be provided (for example `dart{1}`) or multiple one, from and to being separated with a dash (for example `javascript{3-6}`). Both single or multiple lines can be mixed (for example `typescript{2, 3-4, 7, 8-15}`).
 
-Animation between the selected highlighted groups can be triggered with the help of methods (see component [@deckdeckgo/highlight-code] documentation for details).  
+Animation between the selected highlighted groups can be triggered with the help of methods (see component [@deckdeckgo/highlight-code] documentation for details).
 
 ## Showcase
 
@@ -203,6 +204,6 @@ I (David here) use this plugin in the blog of my personal website [daviddalbusco
 
 ## License
 
-MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com) and [Nicolas Mattia](mailto:nicolas@nmattia.com) 
+MIT © [David Dal Busco](mailto:david.dalbusco@outlook.com) and [Nicolas Mattia](mailto:nicolas@nmattia.com)
 
 [@deckdeckgo/highlight-code]: https://docs.deckdeckgo.com/?path=/story/components-highlight-code--highlight-code
