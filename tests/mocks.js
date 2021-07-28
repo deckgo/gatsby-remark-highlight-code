@@ -10,10 +10,15 @@ const typescriptLangNode = {
 const typescriptWithLinesGroupNode = {
   lang: "typescript{3,4, 5-9, 22-45}",
 };
+const dartLangMetaNode = {
+  lang: "dart{3",
+  meta: ",4,5}",
+};
 
 module.exports = {
   dartLangNode,
   dartLangWithSpacesNode,
   typescriptLangNode,
   typescriptWithLinesGroupNode,
+  dartLangMetaNode,
 };

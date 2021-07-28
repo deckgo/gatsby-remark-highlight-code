@@ -2,7 +2,7 @@ const {
   dartLangNode,
   dartLangWithSpacesNode,
   typescriptLangNode,
-  typescriptWithLinesGroupNode,
+  typescriptWithLinesGroupNode, dartLangMetaNode,
 } = require("./tests/mocks");
 const { parseLanguageAndHighlightedLines, parseNodeHtml } = require("./utils");
 
@@ -106,5 +106,8 @@ describe("languages extraction", () => {
             parseLanguageAndHighlightedLines(typescriptWithLinesGroupNode)
                 .highlightLines
         ).toBe("3 4 5,9 22,45");
+        expect(parseLanguageAndHighlightedLines(dartLangMetaNode).highlightLines).toBe(
+            "3 4 5"
+        );
     });
 });
