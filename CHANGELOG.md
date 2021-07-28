@@ -1,3 +1,9 @@
+# 3.0.1 (2021-07-28)
+
+### Fix
+
+- no language provided results in an `undefined` value for the attribute highlight-lines ([#40](https://github.com/deckgo/gatsby-remark-highlight-code/issues/40))
+
 # 3.0.0 (2021-05-22)
 
 ### Breaking Changes
