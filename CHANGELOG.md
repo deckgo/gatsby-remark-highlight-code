@@ -3,6 +3,7 @@
 ### Fix
 
 - no language provided results in an `undefined` value for the attribute highlight-lines ([#40](https://github.com/deckgo/gatsby-remark-highlight-code/issues/40))
+- highlight-lines information might be provided with the `node.lang` but als with `node.meta`
 
 # 3.0.0 (2021-05-22)
 

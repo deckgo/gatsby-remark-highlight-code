@@ -7,11 +7,15 @@ const _ = require(`lodash`);
  * which is compatible with the <deckdeckgo-highlight-code> component (https://docs.deckdeckgo.com/?path=/story/components-highlight-code--highlight-code)
  * @param {Markdown Node} node
  */
-const parseLanguageAndHighlightedLines = (node) => {
+const parseLanguageAndHighlightedLines = ({lang: nodeLang, meta}) => {
   const highlightLinesRegex = /{(.*?)}/g;
-  let lang = node.lang;
+
+  const joinedNodeLang = `${nodeLang}${meta !== null && meta !== undefined ? meta : ''}`
+
+  let lang = joinedNodeLang;
   let highlightLines = "";
-  const regexExecResults = highlightLinesRegex.exec(node.lang);
+  const regexExecResults = highlightLinesRegex.exec(joinedNodeLang);
+
   if (!regexExecResults) { // no lines to highlight
     return {
       lang,
