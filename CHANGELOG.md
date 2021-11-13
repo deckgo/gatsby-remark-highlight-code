@@ -1,3 +1,9 @@
+# 3.0.2 (2021-11-13)
+
+### Fix
+
+- bump required `@deckdeckgo/highlight-code` dependency to solve concurrent required scripts load for complex languages
+
 # 3.0.1 (2021-07-28)
 
 ### Fix
