@@ -1,3 +1,9 @@
+# 3.1.0 (2021-12-01)
+
+### Fix
+
+- clean zero width spaces from clipboard when code is copied (to do so, the `copy` event is intercepted and processed only if the target is the component)
+
 # 3.0.2 (2021-11-13)
 
 ### Fix
