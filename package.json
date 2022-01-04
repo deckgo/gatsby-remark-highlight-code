@@ -13,7 +13,7 @@
     "unist-util-visit": "^2.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^3.0.0",
+    "gatsby": "^3.0.0 || ^4.0.0",
     "@deckdeckgo/highlight-code": "^3.6.0"
   },
   "repository": {
