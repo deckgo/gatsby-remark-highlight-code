@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-highlight-code",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Adds stylish cards and syntax highlighting to code blocks in markdown files",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "unist-util-visit": "^2.0.2"
   },
   "peerDependencies": {
-    "gatsby": "^3.0.0 || ^4.0.0",
+    "gatsby": "^3.0.0 || ^4.0.0 || ^5.0.0",
     "@deckdeckgo/highlight-code": "^3.6.0"
   },
   "repository": {

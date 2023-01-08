@@ -1,3 +1,9 @@
+# 3.3.0 (2022-01-08)
+
+### Features
+
+- support Gatsby v5 (in addition to v4 & v3)
+
 # 3.2.0 (2022-01-04)
 
 ### Features
